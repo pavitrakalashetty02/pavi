@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> swiggy</title>
+    <style>
+        @media screen and (max-width:767px) 
+        {
+            /* body{
+                background-color: blueviolet;
+                flex-direction:column;
+                display: block;
+                 border: 2px solid black;
+                 color:black;
+            } */
+            .one{
+                flex-direction:column;
+                text-align: center;
+            }
+             nav ul{
+                flex-direction:column;
+                flex-wrap: wrap;
+            }
+            
+            .three{
+                 flex-direction:column;
+                flex-wrap: wrap;
+
+            }
+            
+            .pspk{
+                 flex-direction:column;
+                flex-wrap: wrap;
+            }
+            .pspk div{
+                 flex-direction:column;
+                flex-wrap: wrap;
+            }
+            .pspk img{
+                 flex-direction:row;
+                flex-wrap: wrap;
+            }
+            .footer{
+                 flex-direction:column;
+                flex-wrap: wrap;
+                
+            }
+            
+
+        }
+        .one {
+            display: flex;
+            background-color: orange;
+            flex-direction: row;
+        }
+
+         nav ul {
+            margin: 10px;
+            color: white;
+            display: flex;
+            padding: 50px;
+            font-size: 25px;
+            gap:30px;
+            flex-direction:row;
+            justify-content: space-evenly;
+        }
+        .three {
+            background-color: antiquewhite;
+             margin:10px;
+            padding: 20px;
+            top: 5px;
+            width: auto;   
+        }
+        .pspk {
+            display: flex;
+            background-color: white;
+            text-align: center;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .pspk div {
+            margin: 20px;
+            padding: 15px;
+            border: 3px solid purple;
+            box-sizing: border-box;
+             justify-content: space-evenly;
+        }
+        .pspk img {
+            width: 200px;
+            height: 150px;
+        }
+        .pk {
+            text-align: center;
+        }
+        footer {
+            background-color: black;
+            color: aliceblue;
+            height: 200px;
+            display: flex;
+            width: 100%px;
+            margin-top: 20px;
+            padding: 5px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: center;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 0px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="one">
+        <img src="download.png">
+            <nav>
+                <ul type="none">
+                <li> Home</li>
+                <li> Contact</li>
+                <li> About</li>
+                </ul>
+            </nav>
+        </div>
+     </header>
+    <div class="three">
+        <h1> Delicious Food,Delivered Fast 🍕</h1>
+        <p> order your favorite meals and get them delivered right to your
+            doorsteps in minutes
+        </p>
+        <input type="order now" value="order now">
+    </div>
+    <div class="pk">
+        <h1> Our Popular Dishes</h1>
+    </div>
+    <div class="pspk">
+        <div>
+            <img src="img1.jpg">
+            <h1> North Karnataka thali</h1>
+            <p> ₹200 Rs</p>
+        </div>
+        <div>
+            <img src="img2.jpg">
+            <h1> Paddu</h1>
+            <p> ₹300</p>
+        </div>
+        <div>
+            <img src="img3.jpg">
+            <h1>Mawa Puri</h1>
+            <p> ₹400</p>
+        </div>
+        <div>
+            <img src="img4.jpg">
+            <h1>Rasmalai</h1>
+            <p> ₹100</p>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <h1>About Us</h1>
+            <p> We Delivery Delicious Food To Your Doorstep Quickly And Safely<br></p><br>
+        </div>
+        <div>
+            <h1>Contact Us</h1>
+            <p>pavi@Gmail.com</p>
+        </div>
+        <div>
+            <h1>Follow Us</h1>
+            <p>instagram.com</p>
+        </div>
+    </footer>
+</body>
+</html>
