@@ -1,172 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title> swiggy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy</title>
     <style>
-    
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         .one {
             display: flex;
             background-color: orange;
             flex-direction: row;
+            align-items: center;
+            padding: 20px;
         }
 
-         nav ul {
-            margin: 10px;
-            color: white;
-            display: flex;
-            padding: 50px;
-            font-size: 25px;
-            gap:30px;
-            flex-direction:row;
-            justify-content: space-evenly;
+        .one img {
+            width: 80px;
+            height: auto;
+            margin-right: 20px;
         }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+            font-size: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
         .three {
             background-color: antiquewhite;
-             margin:10px;
-            padding: 20px;
-            top: 5px;
-            width: auto;   
+            margin: 10px;
+            padding: 30px;
+            text-align: center;
         }
+
+        .three button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: orange;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .pk {
+            text-align: center;
+            margin-top: 30px;
+        }
+
         .pspk {
             display: flex;
-            background-color: white;
-            text-align: center;
-            flex-direction: row;
-            justify-content: space-evenly;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
         }
+
         .pspk div {
-            margin: 20px;
-            padding: 15px;
             border: 3px solid purple;
-            box-sizing: border-box;
-             justify-content: space-evenly;
+            padding: 15px;
+            width: 220px;
+            text-align: center;
+            background-color: white;
         }
+
         .pspk img {
             width: 200px;
             height: 150px;
         }
-        .pk {
-            text-align: center;
-        }
+
         footer {
             background-color: black;
             color: aliceblue;
-            height: 200px;
             display: flex;
-            width: 150px;
-            margin-top: 20px;
-            padding: 5px;
             justify-content: space-around;
             flex-wrap: wrap;
-            text-align: center;
-            flex-direction: row;
-            gap: 20px;
-            align-items: center;
-            margin-bottom: 0px;
-
+            padding: 30px;
+            margin-top: 20px;
         }
-          @media screen  (max-width:767px) 
-        {
-            .one{
-                flex-direction:column;
+
+        footer div {
+            text-align: center;
+            width: 200px;
+        }
+
+        /* ✅ Media Query for Mobile Screens */
+        @media screen and (max-width: 767px) {
+            .one {
+                flex-direction: column;
                 text-align: center;
-                flex-wrap:wrap;
             }
-             nav ul{
-                flex-direction:column;
-                flex-wrap: wrap;
-            }
-            
-            .three{
-                 flex-direction:column;
-                flex-wrap: wrap;
 
+            nav ul {
+                flex-direction: column;
+                align-items: center;
             }
-            
-            .pspk{
-                 flex-direction:column;
-                flex-wrap: wrap;
-            }
-            .pspk div{
-                 flex-direction:column;
-                flex-wrap: wrap;
-            }
-            .pspk img{
-                 flex-direction:column;
-                flex-wrap: wrap;
-            }
-            .footer{
-                 flex-direction:column;
-                flex-wrap: wrap;
-                
-            }
-            
 
+            .pspk {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .pspk div {
+                width: 90%;
+            }
+
+            footer {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
 <body>
+
+    <!-- ✅ Header -->
     <header>
-    <div class="one">
-        <img src="download.png">
+        <div class="one">
+            <img src="download.png" alt="Swiggy Logo">
             <nav>
-                <ul type="none">
-                <li> Home</li>
-                <li> Contact</li>
-                <li> About</li>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
                 </ul>
             </nav>
         </div>
-     </header>
+    </header>
+
+    <!-- ✅ Hero Section -->
     <div class="three">
-        <h1> Delicious Food,Delivered Fast 🍕</h1>
-        <p> order your favorite meals and get them delivered right to your
-            doorsteps in minutes
-        </p>
-        <input type="order now" value="order now">
+        <h1>Delicious Food, Delivered Fast 🍕</h1>
+        <p>Order your favorite meals and get them delivered right to your doorstep in minutes.</p>
+        <br>
+        <button>Order Now</button>
     </div>
+
+    <!-- ✅ Popular Dishes -->
     <div class="pk">
-        <h1> Our Popular Dishes</h1>
+        <h1>Our Popular Dishes</h1>
     </div>
     <div class="pspk">
         <div>
-            <img src="img1.jpg">
-            <h1> North Karnataka thali</h1>
-            <p> ₹200 Rs</p>
+            <img src="img1.jpg" alt="North Karnataka Thali">
+            <h2>North Karnataka Thali</h2>
+            <p>₹200</p>
         </div>
         <div>
-            <img src="img2.jpg">
-            <h1> Paddu</h1>
-            <p> ₹300</p>
+            <img src="img2.jpg" alt="Paddu">
+            <h2>Paddu</h2>
+            <p>₹300</p>
         </div>
         <div>
-            <img src="img3.jpg">
-            <h1>Mawa Puri</h1>
-            <p> ₹400</p>
+            <img src="img3.jpg" alt="Mawa Puri">
+            <h2>Mawa Puri</h2>
+            <p>₹400</p>
         </div>
         <div>
-            <img src="img4.jpg">
-            <h1>Rasmalai</h1>
-            <p> ₹100</p>
+            <img src="img4.jpg" alt="Rasmalai">
+            <h2>Rasmalai</h2>
+            <p>₹100</p>
         </div>
     </div>
+
+    <!-- ✅ Footer -->
     <footer>
         <div>
-            <h1>About Us</h1>
-            <p> We Delivery Delicious Food To Your Doorstep Quickly And Safely<br></p><br>
+            <h2>About Us</h2>
+            <p>We deliver delicious food to your doorstep quickly and safely.</p>
         </div>
         <div>
-            <h1>Contact Us</h1>
-            <p>pavi@Gmail.com</p>
+            <h2>Contact Us</h2>
+            <p>pavi@gmail.com</p>
         </div>
         <div>
-            <h1>Follow Us</h1>
+            <h2>Follow Us</h2>
             <p>instagram.com</p>
         </div>
     </footer>
-</body>
 
+</body>
 </html>
+        
+       
+       
+
 
 
 
